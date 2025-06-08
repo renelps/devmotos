@@ -30,7 +30,7 @@ Rotas dinâmicas por slug para cada serviço
 
 SEO dinâmico usando generateMetadata (Open Graph incluído)
 
-Carregamento otimiz ado de imagens com <Image> do Next.js
+Carregamento otimizado de imagens com <Image> do Next.js
 
 Fallback de loading durante navegação interna (App Router)
 
@@ -45,19 +45,21 @@ Clone o repositório:
 git clone https://github.com/renelps/devmotos.git
 cd devmotos
 
-Instale dependências:
+Instale as dependências:
 
 npm install
 # ou
 yarn install
 
-Inicie em modo de desenvolvimento:
+Inicie o servidor de desenvolvimento:
 
 npm run dev
 # ou
 yarn dev
 
-Acesse: http://localhost:3000
+Abra no navegador:
+
+http://localhost:3000
 
 📁 Estrutura de Pastas
 
@@ -65,32 +67,43 @@ src/
 ├── app/
 │   ├── post/
 │   │   ├── layout.tsx       # Layout do segmento /post
-│   │   ├── page.tsx         # Lista ou redirecionamento
+│   │   ├── page.tsx         # Lista de serviços ou redirecionamento
 │   │   └── [slug]/
-│   │       ├── page.tsx     # Detalhe do serviço
+│   │       ├── page.tsx     # Detalhe de cada serviço
 │   │       ├── loading.tsx  # Componente de loading
 │   │       └── components/
 │   │           └── content.tsx
-├── components/              # Componentes reutilizáveis
+├── components/              # Componentes compartilhados
 │   ├── Hero.tsx
 │   └── Container.tsx
 └── utils/
     ├── actions/
-    │   └── get-data.ts      # Lógica de fetch
-    └── post.type.ts         # Tipagens
+    │   └── get-data.ts      # Lógica de fetch de dados
+    └── post.type.ts         # Tipagens de dados
 
-public/   # Imagens e assets estáticos
+public/   # Assets estáticos (imagens, favicon)
 styles/   # Estilos globais
-.next/    # Build e cache (ignoradas no Git)
+.next/    # Build e cache (ignorada no Git)
 
 🤝 Contribuição
 
-Fork do repositório
+Faça fork do repositório
 
-Crie uma branch: git checkout -b minha-feature
+Crie uma branch:
 
-Faça commits concisos: git commit -m "feat: descrição da feature"
+git checkout -b minha-feature
 
-Envie: git push origin minha-feature
+Realize suas alterações e faça commit:
+
+git commit -m "feat: descrição da feature"
+
+Envie para o seu fork:
+
+git push origin minha-feature
 
 Abra um Pull Request
+
+📝 Licença
+
+MIT © ReneLPS
+

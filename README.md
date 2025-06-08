@@ -1,68 +1,70 @@
-DevMotos Service Platform
+# DevMotos Service Platform
 
 📅 Junho de 2025 – até o momento
 
 Aplicação completa de plataforma de serviços para oficinas e manutenção veicular, com páginas dinâmicas, SEO otimizado e interface responsiva.
 
-🧪 Tecnologias Utilizadas
+---
 
-🖥️ Frontend
+## 🧪 Tecnologias Utilizadas
 
-Next.js (App Router)
+### 🖥️ Frontend
 
-React + TypeScript
+* **Next.js** (App Router)
+* **React** + **TypeScript**
+* **SCSS Modules**
+* **next/image** (otimização de imagens)
+* **react-icons** (ícones WhatsApp)
 
-SCSS Modules
+### 🛠️ Backend / Fetch
 
-next/image (otimização de imagens)
+* Função customizada `getItemBySlug` para consumo de API/CMS
+* Suporte a Server Components do Next.js
 
-react-icons (ícones WhatsApp)
+---
 
-🛠️ Backend / Fetch
+## 🚀 Funcionalidades
 
-Função customizada getItemBySlug para consumo de API/CMS
+* **Rotas dinâmicas** por slug para cada serviço
+* **SEO dinâmico** usando `generateMetadata` (Open Graph incluído)
+* **Carregamento otimizado** de imagens com `<Image>` do Next.js
+* **Fallback de loading** durante navegação interna (App Router)
+* **Componente Hero** com botão de contato WhatsApp
+* **Seção Sobre** com texto customizável e botão opcional
 
-Suporte a Server Components do Next.js
+---
 
-🚀 Funcionalidades
+## 📦 Como Executar o Projeto
 
-Rotas dinâmicas por slug para cada serviço
+1. Clone o repositório:
 
-SEO dinâmico usando generateMetadata (Open Graph incluído)
+   ```bash
+   git clone https://github.com/renelps/devmotos.git
+   cd devmotos
+   ```
+2. Instale as dependências:
 
-Carregamento otimizado de imagens com <Image> do Next.js
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+3. Inicie o servidor de desenvolvimento:
 
-Fallback de loading durante navegação interna (App Router)
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+4. Abra no navegador:
 
-Componente Hero com botão de contato WhatsApp
+   > [http://localhost:3000](http://localhost:3000)
 
-Seção Sobre com texto customizável e botão opcional
+---
 
-📦 Como Executar o Projeto
+## 📁 Estrutura de Pastas
 
-Clone o repositório:
-
-git clone https://github.com/renelps/devmotos.git
-cd devmotos
-
-Instale as dependências:
-
-npm install
-# ou
-yarn install
-
-Inicie o servidor de desenvolvimento:
-
-npm run dev
-# ou
-yarn dev
-
-Abra no navegador:
-
-http://localhost:3000
-
-📁 Estrutura de Pastas
-
+```bash
 src/
 ├── app/
 │   ├── post/
@@ -84,24 +86,36 @@ src/
 public/   # Assets estáticos (imagens, favicon)
 styles/   # Estilos globais
 .next/    # Build e cache (ignorada no Git)
+```
 
-🤝 Contribuição
+---
 
-Faça fork do repositório
+## 🤝 Contribuição
 
-Crie uma branch:
+1. Faça fork do repositório
+2. Crie uma branch:
 
-git checkout -b minha-feature
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Realize suas alterações e faça commit:
 
-Realize suas alterações e faça commit:
+   ```bash
+   git commit -m "feat: descrição da feature"
+   ```
+4. Envie para o seu fork:
 
-git commit -m "feat: descrição da feature"
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request
 
-Envie para o seu fork:
+---
 
-git push origin minha-feature
+## 📝 Licença
 
-Abra um Pull Request
+MIT © ReneLPS
+
 
 📝 Licença
 

@@ -1,112 +1,96 @@
-DevMotos
+DevMotos Service Platform
 
-Plataforma de serviços para oficinas e manutenção veicular, construída com Next.js e otimizada para SEO e performance.
+📅 Junho de 2025 – até o momento
 
-🚀 Tecnologias
+Aplicação completa de plataforma de serviços para oficinas e manutenção veicular, com páginas dinâmicas, SEO otimizado e interface responsiva.
+
+🧪 Tecnologias Utilizadas
+
+🖥️ Frontend
 
 Next.js (App Router)
 
-TypeScript
+React + TypeScript
 
 SCSS Modules
 
 next/image (otimização de imagens)
 
-react-icons (ícone WhatsApp)
+react-icons (ícones WhatsApp)
 
-⚙️ Pré-requisitos
+🛠️ Backend / Fetch
 
-Node.js v18+ e npm ou yarn
+Função customizada getItemBySlug para consumo de API/CMS
 
-Git
+Suporte a Server Components do Next.js
 
-📥 Instalação
+🚀 Funcionalidades
+
+Rotas dinâmicas por slug para cada serviço
+
+SEO dinâmico usando generateMetadata (Open Graph incluído)
+
+Carregamento otimiz ado de imagens com <Image> do Next.js
+
+Fallback de loading durante navegação interna (App Router)
+
+Componente Hero com botão de contato WhatsApp
+
+Seção Sobre com texto customizável e botão opcional
+
+📦 Como Executar o Projeto
 
 Clone o repositório:
 
 git clone https://github.com/renelps/devmotos.git
 cd devmotos
 
-Instale as dependências:
+Instale dependências:
 
 npm install
 # ou
 yarn install
 
-🔧 Scripts úteis
-
-Comando
-
-Descrição
+Inicie em modo de desenvolvimento:
 
 npm run dev
+# ou
+yarn dev
 
-Inicia o servidor de desenvolvimento em http://localhost:3000
+Acesse: http://localhost:3000
 
-npm run build
-
-Gera build para produção
-
-npm run start
-
-Inicia servidor de produção (após build)
-
-npm run lint
-
-Executa ESLint
-
-📁 Estrutura de pastas
+📁 Estrutura de Pastas
 
 src/
 ├── app/
 │   ├── post/
-│   │   ├── layout.tsx           # Layout do segmento /post
-│   │   ├── page.tsx             # Lista de posts ou redirecionamento
+│   │   ├── layout.tsx       # Layout do segmento /post
+│   │   ├── page.tsx         # Lista ou redirecionamento
 │   │   └── [slug]/
-│   │       ├── page.tsx         # Rota dinâmica de serviço
-│   │       ├── loading.tsx      # Fallback de loading durante fetch
+│   │       ├── page.tsx     # Detalhe do serviço
+│   │       ├── loading.tsx  # Componente de loading
 │   │       └── components/
-│   │           └── content.tsx  # Componente de conteúdo do serviço
-├── components/                  # Components compartilhados
+│   │           └── content.tsx
+├── components/              # Componentes reutilizáveis
 │   ├── Hero.tsx
 │   └── Container.tsx
 └── utils/
     ├── actions/
-    │   └── get-data.ts          # Função de fetch de dados
-    └── post.type.ts             # Tipagens de PostProps
+    │   └── get-data.ts      # Lógica de fetch
+    └── post.type.ts         # Tipagens
 
-public/   # Assets estáticos (imagens, favicon)
-styles/   # Estilos globais (se houver)
-.next/    # Build e cache do Next.js (ignorada no git)
-
-📌 Funcionalidades
-
-Páginas dinâmicas por slug com detalhes de serviços
-
-SEO dinâmico via generateMetadata
-
-Otimização de imagens responsiva e prioritized loading
-
-Componente de Loading para navegação interna (App Router)
+public/   # Imagens e assets estáticos
+styles/   # Estilos globais
+.next/    # Build e cache (ignoradas no Git)
 
 🤝 Contribuição
 
-Fork este repositório
+Fork do repositório
 
-Crie uma branch:
+Crie uma branch: git checkout -b minha-feature
 
-git checkout -b minha-feature
+Faça commits concisos: git commit -m "feat: descrição da feature"
 
-Faça suas alterações e commit:
-
-git commit -m "feat: descrição da feature"
-
-Envie para o seu fork:
-
-git push origin minha-feature
+Envie: git push origin minha-feature
 
 Abra um Pull Request
-
-📝 Licença
-
-Este projeto está licenciado sob a MIT License.
